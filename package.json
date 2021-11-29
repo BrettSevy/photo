@@ -1,5 +1,5 @@
 {
-  "homepage": "https://{brettsevy}.github.io/{photo}",
+  "homepage": "https://brettsevy.github.io/photo",
   "name": "photo",
   "version": "0.1.0",
   "private": true,
@@ -15,7 +15,6 @@
     "aos": "^2.3.4",
     "firebase": "^7.16.1",
     "framer-motion": "^4.1.17",
-    "gh-pages": "^3.2.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
@@ -47,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
