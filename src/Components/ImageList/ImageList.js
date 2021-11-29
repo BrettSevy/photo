@@ -2,10 +2,21 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import IMG_01 from "./images/IMG_01.jpg";
-import IMG_0443 from "./images/IMG_0443.jpg";
-import IMG_5771 from "./images/IMG_5771.jpg";
-import IMG_6207 from "./images/IMG_6207.jpg";
+
+import image1 from "./images/1.jpg";
+import image2 from "./images/2.jpg";
+import image3 from "./images/3.jpg";
+import image4 from "./images/4.jpg";
+import image5 from "./images/5.jpg";
+import image6 from "./images/6.jpg";
+import image7 from "./images/7.jpg";
+import image8 from "./images/8.jpg";
+import image9 from "./images/9.jpg";
+import image10 from "./images/10.jpg";
+import image11 from "./images/11.jpg";
+import image12 from "./images/12.jpg";
+import image13 from "./images/13.jpg";
+import image14 from "./images/14.jpg";
 import './ImageList.css';
 
 
@@ -31,52 +42,60 @@ export default function MasonryImageList() {
 
 const itemData = [
   {
-    img: IMG_01,
-    title: 'Bed',
+    img: image1,
+    title: 'christmas',
   },
   {
-    img: IMG_5771,
-    title: 'Books',
+    img: image3,
+    title: 'dessert',
   },
   {
-    img: IMG_6207,
-    title: 'Kitchen',
+    img: image14,
+    title: 'headshot',
   },
   {
-    img: IMG_0443,
-    title: 'Sink',
+    img: image4,
+    title: 'chelsea',
   },
   {
-    img: 'https://images.unsplash.com/photo-1588436706487-9d55d73a39e3',
-    title: 'Blinds',
+    img: image8,
+    title: 'wyatt',
   },
   {
-    img: 'https://images.unsplash.com/photo-1574180045827-681f8a1a9622',
-    title: 'Chairs',
+    img: image12,
+    title: 'sar',
   },
   {
-    img: 'https://images.unsplash.com/photo-1530731141654-5993c3016c77',
-    title: 'Laptop',
+    img: image7,
+    title: 'newborn',
   },
   {
-    img: 'https://images.unsplash.com/photo-1481277542470-605612bd2d61',
-    title: 'Doors',
+    img: image5,
+    title: 'engagement',
   },
   {
-    img: 'https://images.unsplash.com/photo-1517487881594-2787fef5ebf7',
-    title: 'Coffee',
+    img: image10,
+    title: 'pink',
   },
   {
-    img: 'https://images.unsplash.com/photo-1516455207990-7a41ce80f7ee',
-    title: 'Storage',
+    img: image2,
+    title: 'makeup',
   },
   {
-    img: 'https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62',
-    title: 'Candle',
+    img: image6,
+    title: 'family',
   },
   {
-    img: 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4',
-    title: 'Coffee table',
+    img: image9,
+    title: 'watermelon',
+  },
+  {
+    img: image13,
+    title: 'brett',
+  },
+  {
+    img: image11,
+    title: 'fall',
   },
     
 ];

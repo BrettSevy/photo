@@ -10,7 +10,7 @@ import './PhotographyPage.css';
 import PhotoHeader from '../PhotoHeader';
 import { Helmet } from "react-helmet";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
-import About from '../About';
+// import About from '../About';
 
 const theme = createMuiTheme({
   spacing: 5,
@@ -31,7 +31,7 @@ function PhotographyPage() {
       </Helmet>
       <ThemeProvider theme={theme}>
       <PhotoHeader/>
-      <About/>
+      {/* <About/> */}
       {/* <UploadForm/> */}
       {/* <HeroSection /> */}
       {/* <Cards /> */}
