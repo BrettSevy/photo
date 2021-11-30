@@ -21,9 +21,9 @@ function App() {
       <Router>
         {/* <Navbar /> */}
         <Switch>
-        <Route exact path="/" component={Hero} />
-          <Route path='/Photography' component={PhotographyPage} />
-          <Route path='/WebDev' component={WebDevPage} />
+        <Route exact path="/photo" component={Hero} />
+          <Route path='/photography' component={PhotographyPage} />
+          <Route path='/webdev' component={WebDevPage} />
          
         </Switch>
       </Router>
