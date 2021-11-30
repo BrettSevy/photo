@@ -2,7 +2,7 @@ import React from 'react';
 // import './App.css';
 // import Cards from '../Cards';
 // import HeroSection from '../HeroSection/HeroSection';
-import Footer from '../Footer/Footer';
+// import Footer from '../Footer/Footer';
 import ImageList from '../ImageList/ImageList';
 // import Modal from '../Modal/Modal';
 // import UploadForm from '../UploadForm/UploadForm';
@@ -38,7 +38,7 @@ function PhotographyPage() {
            {/* <ImageGrid setSelectedImg={setSelectedImg} />
       {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />} */}
       <ImageList/>
-      <Footer />
+      {/* <Footer /> */}
       </ThemeProvider>
     </>
   );
