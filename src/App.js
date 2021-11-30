@@ -14,13 +14,14 @@ import WebDevPage from './Components/Pages/WebDevPage';
 // import Navbar from './Components/Navbar/Navbar';
 // import { Home } from '@material-ui/icons';
 
+
 function App() {
   return (
     <>
       <Router>
         {/* <Navbar /> */}
         <Switch>
-          <Route path='/' exact component={Home} />
+        <Route exact path="/" component={Home} />
           <Route path='/Photography' component={PhotographyPage} />
           <Route path='/WebDev' component={WebDevPage} />
          
