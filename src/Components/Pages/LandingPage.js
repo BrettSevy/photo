@@ -16,7 +16,7 @@ const theme = createMuiTheme({
 });
 
 
-export default function Home() {
+export default function Hero() {
     return (
         <>
         <Helmet>

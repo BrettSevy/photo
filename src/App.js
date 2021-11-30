@@ -6,7 +6,7 @@ import './App.css';
 // import Home from './components/pages/Home';
 // import Services from './components/pages/Services';
 // import Products from '../src/PhotoComponents/pages/Products';
-import Home from './Components/Pages/LandingPage';
+import Hero from './Components/Pages/LandingPage';
 import PhotographyPage from './Components/Pages/PhotographyPage';
 import WebDevPage from './Components/Pages/WebDevPage';
 // import SignUp from './PhotoComponents/pages/Pages/SignUp';
@@ -21,7 +21,7 @@ function App() {
       <Router>
         {/* <Navbar /> */}
         <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={Hero} />
           <Route path='/Photography' component={PhotographyPage} />
           <Route path='/WebDev' component={WebDevPage} />
          
