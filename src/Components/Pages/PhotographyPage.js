@@ -1,16 +1,12 @@
 import React from 'react';
-// import './App.css';
-// import Cards from '../Cards';
-// import HeroSection from '../HeroSection/HeroSection';
-// import Footer from '../Footer/Footer';
 import ImageList from '../ImageList/ImageList';
 // import Modal from '../Modal/Modal';
-// import UploadForm from '../UploadForm/UploadForm';
 import './PhotographyPage.css';
 import PhotoHeader from '../PhotoHeader';
 import { Helmet } from "react-helmet";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 // import About from '../About';
+import Contact from '../Contact/index'
 
 const theme = createMuiTheme({
   spacing: 5,
@@ -32,13 +28,11 @@ function PhotographyPage() {
       <ThemeProvider theme={theme}>
       <PhotoHeader/>
       {/* <About/> */}
-      {/* <UploadForm/> */}
-      {/* <HeroSection /> */}
-      {/* <Cards /> */}
            {/* <ImageGrid setSelectedImg={setSelectedImg} />
       {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />} */}
       <ImageList/>
-      {/* <Footer /> */}
+      <Contact/>
+      
       </ThemeProvider>
     </>
   );

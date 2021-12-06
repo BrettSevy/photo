@@ -2,9 +2,10 @@ import React from "react";
 import { Container, makeStyles, Typography, AppBar, Toolbar } from "@material-ui/core";
 import { Parallax, Background } from "react-parallax";
 import SocialNetwork from "../SocialNetwork";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import backgroundImage from "./assets/parallax.jpeg";
 // import { Switch } from "react-router-dom";
+
 
 
 const useStyles = makeStyles(theme => ({
@@ -62,17 +63,12 @@ const useStyles = makeStyles(theme => ({
             }
         }
     },
-    networks: {
-        // background: "red"
-        [theme.breakpoints.down(680)]: {
-            display: "none"
-        }
-    }
+    
 }))
 
 
 export default function Header() {
-    const props = { color: 'white' };
+    const props = { color: '#fff' };
     const classes = useStyles(props);
 
 
@@ -81,20 +77,20 @@ export default function Header() {
             <AppBar className={classes.appbar}>
                 <Container maxWidth="md">
                     <Toolbar className={classes.toolbar}>
-                        <Link
-                            to="/"
-                            smooth={true}
-                            spy={true}
-                            duration={600}
-                        >
+                    {/* <Switch
+                            to="/WebDev"
+                        smooth={true}
+                        spy={true}
+                        duration={600}
+                        > */}
                             <svg viewBox="0 0 100 100" className={classes.logo}>
                                 <text x="10" y="77" fontFamily="Arial" fontSize="73">B</text>
                                 <text x="46" y="77" fontFamily="Arial" fontSize="73">S</text>
 
                             </svg>
-                        </Link>
+                        {/* </Switch> */}
                         <Typography className={classes.menu}>
-                            <Link
+                            {/* <Link
                                 to="about"
                                 smooth={true}
                                 spy={true}
@@ -133,8 +129,9 @@ export default function Header() {
                                 variant="h6"
                                 className={classes.menuItem}
                                 underline="none">
-                                CONTACT</Link>
+                                CONTACT</Link> */}
 
+                             
                         </Typography>
                         <SocialNetwork className={classes.networks} />
                     </Toolbar>
@@ -144,7 +141,7 @@ export default function Header() {
 
             <Parallax strength={300}>
                 <Background className="custom-bg">
-                    <img src={backgroundImage} alt="fill murray" />
+                    <img src={backgroundImage} alt="Brett Sevy Web Developer" />
                 </Background>
 
 

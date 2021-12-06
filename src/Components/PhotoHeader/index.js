@@ -2,8 +2,7 @@ import React from "react";
 import { Container, makeStyles, Typography, AppBar, Toolbar } from "@material-ui/core";
 import { Parallax, Background } from "react-parallax";
 import SocialNetwork from "../SocialNetwork";
-import { Link } from "react-scroll";
-// import { Switch } from "react-router-dom";
+// import { Link } from "react-scroll";
 import { BrowserRouter as Switch } from 'react-router-dom';
 import backgroundImage from './images/parallax.jpeg';
 
@@ -40,13 +39,13 @@ const useStyles = makeStyles(theme => ({
     },
     parallax: {
         height: "100vh",
+        objectFit: 'contain',
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         textAlign: "center",
-        
-
     },
+
     header: {
         background: "transparent",
         height: "100vh",
@@ -55,7 +54,7 @@ const useStyles = makeStyles(theme => ({
         backgroundAttachment: "fixed",
         backgroundRepeat: "no-repeat",
     },
-    
+
     "@global": {
         ".MuiToolbar-root": {
             [theme.breakpoints.down(680)]: {
@@ -65,12 +64,6 @@ const useStyles = makeStyles(theme => ({
             }
         }
     },
-    networks: {
-        // background: "red"
-        [theme.breakpoints.down(680)]: {
-            display: "none"
-        }
-    }
 }))
 
 
@@ -107,7 +100,7 @@ export default function Header() {
                                 className={classes.menuItem}
                             >
                                 About
-                            </Link> */}
+                            </Link>
                             <Link
                                 to="/portfolio"
                                 smooth={true}
@@ -119,7 +112,7 @@ export default function Header() {
                             >
                                 PORTFOLIO
                             </Link>
-                            {/* <Link
+                            <Link
                                 to="projects"
                                 smooth={true}
                                 spy={true}
@@ -150,18 +143,18 @@ export default function Header() {
                 strength={300}
 
             > */}
-               
+
             <Parallax strength={300}>
                 <Background className="custom-bg">
-                    <img src={backgroundImage} alt="fill murray" />
+                    <img src={backgroundImage} alt="Brett Sevy Web Developer" />
                 </Background>
-           
-          
-            <div className={classes.parallax}>
-                <Typography variant="h1" className={classes.name} data-aos="fade-right" data-aos-duration="1500">Brett Sevy</Typography>
-                <Typography className={classes.title} variant="h3" data-aos="fade-left" data-aos-duration="1500"> Photography</Typography>
-            </div>
-        </Parallax>
+
+
+                <div className={classes.parallax}>
+                    <Typography variant="h1" className={classes.name} data-aos="fade-right" data-aos-duration="1500">Brett Sevy</Typography>
+                    <Typography className={classes.title} variant="h3" data-aos="fade-left" data-aos-duration="1500"> Photography</Typography>
+                </div>
+            </Parallax>
         </div >
     );
 }

@@ -1,9 +1,10 @@
-import React from 'react'
-import '../../App.css'
-import Navbar from '../LandingPageHeader/Index';
+import React from 'react';
+import LandingPageHeader from '../LandingPageHeader/Index';
+import PlaceToVisit from '../PlaceToVisit/PlaceToVisit';
 import { Helmet } from "react-helmet";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
-
+import './LandingPage.css';
+import Contact from '../Contact/index'
 
 
 const theme = createMuiTheme({
@@ -15,19 +16,25 @@ const theme = createMuiTheme({
   }
 });
 
-
-export default function Hero() {
-    return (
-        <>
-        <Helmet>
-      <title>Brett Sevy</title>
+function LandingPage() {
+  return (
+    <div>
+      <Helmet>
+        {/* <link rel="icon" type="image/jpg+xml" href={FaviconJPG} />
+        <link rel="icon" type="image/jpg" href={FaviconJPG} /> */}
+        <title>Brett Sevy</title>
       </Helmet>
       <ThemeProvider theme={theme}>
-          < Navbar/>
+      <LandingPageHeader />
+      <PlaceToVisit />
+      <Contact/>
       </ThemeProvider>
-      </>
-          
+      
 
-    )
-  }
+    
+      
+    </div>
+  );
+}
 
+export default LandingPage
