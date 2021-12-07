@@ -3,7 +3,7 @@ import { Container, makeStyles, Typography, AppBar, Toolbar } from "@material-ui
 import { Parallax, Background } from "react-parallax";
 import SocialNetwork from "../SocialNetwork";
 import backgroundImage from "./assets/5.jpg";
-// import logo from "./assets/logo.jpeg";
+import logo from "./assets/whitesmall.jpeg";
 
 
 const useStyles = makeStyles(theme => ({
@@ -72,6 +72,15 @@ const useStyles = makeStyles(theme => ({
     },
 }))
 
+// #FF87B7 pink
+// #F9CADD light pink
+// #2F2F2F darkest gray
+// #4B4B4B 
+// #575757 
+// #8F8E8E
+// #BCBCBC
+// #D0D0D0 lightest gray
+
 
 export default function LandingPageHeader() {
     const props = { color: '#4f4f4f' };
@@ -88,12 +97,12 @@ export default function LandingPageHeader() {
                         spy={true}
                         duration={600}
                         > */}
-                         {/* <img viewBox="0 0 100 100" className={classes.logo} src={logo} alt="Brett Sevy" /> */}
-                            <svg viewBox="0 0 100 100" className={classes.logo}>
+                         <img viewBox="0 0 100 100" className={classes.logo} src={logo} alt="Brett Sevy" />
+                            {/* <svg viewBox="0 0 100 100" className={classes.logo}>
                                 <text x="10" y="77" fontFamily="Arial" fontSize="73">B</text>
                                 <text x="46" y="77" fontFamily="Arial" fontSize="73">S</text>
 
-                            </svg>
+                            </svg> */}
                         {/* </Switch> */}
                         <Typography className={classes.menu}>
                             {/* <Link
