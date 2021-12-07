@@ -9,7 +9,7 @@ import logo from "./assets/whitesmall.jpeg";
 const useStyles = makeStyles(theme => ({
 
     appbar: {
-        background: "#4F4F4F"
+        background: "#8F8E8E"
     },
     menu: {
         flexGrow: 1,
@@ -23,7 +23,7 @@ const useStyles = makeStyles(theme => ({
     },
     logo: {
         height: theme.spacing(9),
-        fill: "#fff",
+        fill: "#D0D0D0",
         "&:hover": {
             fill: "#FF87B7",
             cursor: "pointer"
@@ -54,7 +54,7 @@ const useStyles = makeStyles(theme => ({
     // },
 
     LandingPageHeader: {
-        background: "#4f4f4f",
+        background: "#8F8E8E",
         height: "100vh",
         width: "100%",
         backgroundSize: "cover",
@@ -83,7 +83,7 @@ const useStyles = makeStyles(theme => ({
 
 
 export default function LandingPageHeader() {
-    const props = { color: '#4f4f4f' };
+    const props = { color: '#8F8E8E' };
     const classes = useStyles(props);
 
     return (
@@ -97,12 +97,12 @@ export default function LandingPageHeader() {
                         spy={true}
                         duration={600}
                         > */}
-                         <img viewBox="0 0 100 100" className={classes.logo} src={logo} alt="Brett Sevy" />
-                            {/* <svg viewBox="0 0 100 100" className={classes.logo}>
+                         {/* <img viewBox="0 0 100 100" className={classes.logo} src={logo} alt="Brett Sevy" /> */}
+                            <svg viewBox="0 0 100 100" className={classes.logo}>
                                 <text x="10" y="77" fontFamily="Arial" fontSize="73">B</text>
                                 <text x="46" y="77" fontFamily="Arial" fontSize="73">S</text>
 
-                            </svg> */}
+                            </svg>
                         {/* </Switch> */}
                         <Typography className={classes.menu}>
                             {/* <Link

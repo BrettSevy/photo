@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
         // backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/DSCF3207.JPG'})`,
         display: "flex",
         flexDirection: "column",
-        background: 'black',
+        background: '#8F8E8E',
         [theme.breakpoints.down('md')]: {
             flexDirection: 'column',
 
@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
 export default function () {
     const classes = useStyles();
     return (
-        <div className={classes.root} id="place-to-visit">
+        <div className={classes.root} id="landing_Page_Links">
             <Grid
                 container
                 spacing={2}

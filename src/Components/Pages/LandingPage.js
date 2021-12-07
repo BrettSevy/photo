@@ -1,6 +1,6 @@
 import React from 'react';
 import LandingPageHeader from '../LandingPageHeader/Index';
-import PlaceToVisit from '../PlaceToVisit/PlaceToVisit';
+import LandingPageLinks from '../LandingPageLinks/LandingPageLinks';
 import { Helmet } from "react-helmet";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 import './LandingPage.css';
@@ -26,7 +26,7 @@ function LandingPage() {
       </Helmet>
       <ThemeProvider theme={theme}>
       <LandingPageHeader />
-      <PlaceToVisit />
+      <LandingPageLinks />
       <Contact/>
       </ThemeProvider>
       

@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
         padding: theme.spacing(1)
     },
     icons: {
-        fill: "#fff",
+        fill: "#D0D0D0",
             // fill: "#FA0063",
             // cursor: "pointer"}
     },
