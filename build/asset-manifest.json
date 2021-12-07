@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/photo/static/css/main.11a4e48e.chunk.css",
-    "main.js": "/photo/static/js/main.0e634551.chunk.js",
-    "main.js.map": "/photo/static/js/main.0e634551.chunk.js.map",
+    "main.js": "/photo/static/js/main.99373615.chunk.js",
+    "main.js.map": "/photo/static/js/main.99373615.chunk.js.map",
     "runtime-main.js": "/photo/static/js/runtime-main.c580b11b.js",
     "runtime-main.js.map": "/photo/static/js/runtime-main.c580b11b.js.map",
     "static/js/2.e06b3d17.chunk.js": "/photo/static/js/2.e06b3d17.chunk.js",
@@ -24,7 +24,6 @@
     "static/media/7.ba1bdf0c.jpg": "/photo/static/media/7.ba1bdf0c.jpg",
     "static/media/8.9d469d3e.jpg": "/photo/static/media/8.9d469d3e.jpg",
     "static/media/9.7586f9f2.jpg": "/photo/static/media/9.7586f9f2.jpg",
-    "static/media/DSCF3207.7c203ade.JPG": "/photo/static/media/DSCF3207.7c203ade.JPG",
     "static/media/bootstrap.9cc938d1.png": "/photo/static/media/bootstrap.9cc938d1.png",
     "static/media/burgers.6f55a479.png": "/photo/static/media/burgers.6f55a479.png",
     "static/media/coinflip.1582c78e.png": "/photo/static/media/coinflip.1582c78e.png",
@@ -53,6 +52,6 @@
     "static/js/runtime-main.c580b11b.js",
     "static/js/2.e06b3d17.chunk.js",
     "static/css/main.11a4e48e.chunk.css",
-    "static/js/main.0e634551.chunk.js"
+    "static/js/main.99373615.chunk.js"
   ]
 }

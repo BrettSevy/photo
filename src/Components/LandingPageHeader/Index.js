@@ -2,13 +2,14 @@ import React from "react";
 import { Container, makeStyles, Typography, AppBar, Toolbar } from "@material-ui/core";
 import { Parallax, Background } from "react-parallax";
 import SocialNetwork from "../SocialNetwork";
-import backgroundImage from "./assets/DSCF3207.JPG";
+import backgroundImage from "./assets/5.jpg";
+// import logo from "./assets/logo.jpeg";
 
 
 const useStyles = makeStyles(theme => ({
 
     appbar: {
-        background: "transparent"
+        background: "#4F4F4F"
     },
     menu: {
         flexGrow: 1,
@@ -16,7 +17,7 @@ const useStyles = makeStyles(theme => ({
     menuItem: {
         marginLeft: theme.spacing(5),
         "&:hover": {
-            color: "#FA0063",
+            color: "#FF87B7",
             cursor: "pointer"
         }
     },
@@ -24,7 +25,7 @@ const useStyles = makeStyles(theme => ({
         height: theme.spacing(9),
         fill: "#fff",
         "&:hover": {
-            fill: "#FA0063",
+            fill: "#FF87B7",
             cursor: "pointer"
         }
     },
@@ -33,7 +34,7 @@ const useStyles = makeStyles(theme => ({
         fontWeight: 400,
     },
     title: {
-        color: "#FA0063",
+        color: "#FF87B7",
     },
     parallax: {
         height: "100vh",
@@ -43,16 +44,17 @@ const useStyles = makeStyles(theme => ({
         textAlign: "center",
         minHeight: '100vh',
         alignItems: 'center',
+        
 
     },
-    img: {
-        backgroundSize: 'cover',
-
-         
-    },
+    // custombg: {
+    //     width: '400%',
+    //     height: 'auto',
+    //     justifyContent: 'bottom',
+    // },
 
     LandingPageHeader: {
-        background: "#263145",
+        background: "#4f4f4f",
         height: "100vh",
         width: "100%",
         backgroundSize: "cover",
@@ -72,7 +74,7 @@ const useStyles = makeStyles(theme => ({
 
 
 export default function LandingPageHeader() {
-    const props = { color: 'white' };
+    const props = { color: '#4f4f4f' };
     const classes = useStyles(props);
 
     return (
@@ -86,6 +88,7 @@ export default function LandingPageHeader() {
                         spy={true}
                         duration={600}
                         > */}
+                         {/* <img viewBox="0 0 100 100" className={classes.logo} src={logo} alt="Brett Sevy" /> */}
                             <svg viewBox="0 0 100 100" className={classes.logo}>
                                 <text x="10" y="77" fontFamily="Arial" fontSize="73">B</text>
                                 <text x="46" y="77" fontFamily="Arial" fontSize="73">S</text>
@@ -142,7 +145,7 @@ export default function LandingPageHeader() {
             </AppBar>
 
             <Parallax strength={300}>
-                <Background className="custom-bg">
+                <Background className={classes.custombg}>
                     <img src={backgroundImage} alt="Brett Sevy" />
                 </Background>
 
