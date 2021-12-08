@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
         // backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/DSCF3207.JPG'})`,
         display: "flex",
         flexDirection: "column",
-        background: '#8F8E8E',
+        background: 'transparent',
         [theme.breakpoints.down('md')]: {
             flexDirection: 'column',
 
@@ -25,7 +25,7 @@ export default function () {
         <div className={classes.root} id="landing_Page_Links">
             <Grid
                 container
-                spacing={2}
+                spacing={1}
                 direction="row"
                 justify="center"
                 alignItems="flex-start"

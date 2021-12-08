@@ -17,6 +17,11 @@ import image11 from "./images/11.jpg";
 import image12 from "./images/12.jpg";
 import image13 from "./images/13.jpg";
 import image14 from "./images/14.jpg";
+// import image15 from "./images/15.jpg";
+import image16 from "./images/16.jpg";
+import image17 from "./images/17.jpg";
+import image18 from "./images/18.jpg";
+import image19 from "./images/19.jpg";
 
 
 const useStyles = makeStyles(theme => ({
@@ -112,6 +117,10 @@ const itemData = [
     img: image10,
     title: 'pink',
   },
+  // {
+  //   img: image15,
+  //   title: 'brownie',
+  // },
   {
     img: image2,
     title: 'makeup',
@@ -132,5 +141,22 @@ const itemData = [
     img: image11,
     title: 'fall',
   },
+  {
+    img: image16,
+    title: 'tattoo',
+  },
+  {
+    img: image17,
+    title: 'flowers',
+  },
+  {
+    img: image18,
+    title: 'easter',
+  },
+  {
+    img: image19,
+    title: 'stroller',
+  },
+  
 
 ];

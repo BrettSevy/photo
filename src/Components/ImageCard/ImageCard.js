@@ -13,11 +13,13 @@ const useStyles = makeStyles({
         maxWidth: 645,
         background: '#D0D0D0',
         margin: '20px',
-
+        
     },
     media: {
+
         height: '50vh',
         width: '75vh',
+        
         filter: 'grayscale(100%)',
         "&:hover": {
             filter: 'grayscale(0%)',
@@ -25,17 +27,20 @@ const useStyles = makeStyles({
         }
     },
     title: {
-
         fontWeight: 'bold',
         fontSize: '2rem',
         color: '#FF87B7',
         textAlign: 'center',
+        position: 'relative',
+        top: '25%',
+        // left: '50%',
+        // position: 'absolute',
+        // margin: '0',
     },
-    desc: {
-
-        fontSize: '1.1rem',
-        color: 'black',
-    },
+    // desc: {
+    //     fontSize: '1.1rem',
+    //     color: 'black',
+    // },
 });
 
 

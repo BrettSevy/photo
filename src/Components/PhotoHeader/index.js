@@ -4,13 +4,13 @@ import { Parallax, Background } from "react-parallax";
 import SocialNetwork from "../SocialNetwork";
 // import { Link } from "react-scroll";
 import { BrowserRouter as Switch } from 'react-router-dom';
-import backgroundImage from './images/parallax.jpeg';
+import backgroundImage from './images/15.jpg';
 
 
 const useStyles = makeStyles(theme => ({
 
     appbar: {
-        background: "transparent"
+        background: "#8F8E8E"
     },
     menu: {
         flexGrow: 1,
@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
     menuItem: {
         marginLeft: theme.spacing(5),
         "&:hover": {
-            color: "#FA0063",
+            color: "#FF87B7",
             cursor: "pointer"
         }
     },
@@ -26,7 +26,7 @@ const useStyles = makeStyles(theme => ({
         height: theme.spacing(9),
         fill: "#fff",
         "&:hover": {
-            fill: "#FA0063",
+            fill: "#FF87B7",
             cursor: "pointer"
         }
     },
@@ -35,7 +35,7 @@ const useStyles = makeStyles(theme => ({
         fontWeight: 400,
     },
     title: {
-        color: "#FA0063",
+        color: "#FF87B7",
     },
     parallax: {
         height: "100vh",
@@ -46,13 +46,19 @@ const useStyles = makeStyles(theme => ({
         textAlign: "center",
     },
 
-    header: {
-        background: "transparent",
-        height: "100vh",
+    LandingPageHeader: {
+    },
+    
+    custombg: {
+        background: "#8F8E8E",
+        height: "145vh",
         width: "100%",
-        backgroundSize: "cover",
+        objectFit: "cover",
+        display: "flex",
         backgroundAttachment: "fixed",
         backgroundRepeat: "no-repeat",
+        // filter: 'blur(1px)',
+        // height: '50vh',
     },
 
     "@global": {
@@ -145,7 +151,7 @@ export default function Header() {
             > */}
 
             <Parallax strength={300}>
-                <Background className="custom-bg">
+                <Background className={classes.custombg}>
                     <img src={backgroundImage} alt="Brett Sevy Web Developer" />
                 </Background>
 

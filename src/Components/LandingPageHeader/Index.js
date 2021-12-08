@@ -3,7 +3,7 @@ import { Container, makeStyles, Typography, AppBar, Toolbar } from "@material-ui
 import { Parallax, Background } from "react-parallax";
 import SocialNetwork from "../SocialNetwork";
 import backgroundImage from "./assets/5.jpg";
-import logo from "./assets/whitesmall.jpeg";
+// import logo from "./assets/whitesmall.jpeg";
 
 
 const useStyles = makeStyles(theme => ({
@@ -44,22 +44,25 @@ const useStyles = makeStyles(theme => ({
         textAlign: "center",
         minHeight: '100vh',
         alignItems: 'center',
-        
+
 
     },
-    // custombg: {
-    //     width: '400%',
-    //     height: 'auto',
-    //     justifyContent: 'bottom',
-    // },
+    custombg: {
+        // backgroundsize: 'contain',
+        // filter: 'blur(1px)',
+        // width: '400%',
+        // height: 'auto',
+        // justifyContent: 'bottom',
+    },
 
     LandingPageHeader: {
-        background: "#8F8E8E",
-        height: "100vh",
+        // background: "#8F8E8E",
+        height: "145vh",
         width: "100%",
-        backgroundSize: "cover",
+        objectFit: "cover",
+        display: "flex",
         backgroundAttachment: "fixed",
-        backgroundRepeat: "no-repeat"
+        backgroundRepeat: "no-repeat",
     },
     "@global": {
         ".MuiToolbar-root": {
@@ -91,18 +94,18 @@ export default function LandingPageHeader() {
             <AppBar className={classes.appbar}>
                 <Container maxWidth="md">
                     <Toolbar className={classes.toolbar}>
-                    {/* <Switch
+                        {/* <Switch
                             to="/WebDev"
                         smooth={true}
                         spy={true}
                         duration={600}
                         > */}
-                         {/* <img viewBox="0 0 100 100" className={classes.logo} src={logo} alt="Brett Sevy" /> */}
-                            <svg viewBox="0 0 100 100" className={classes.logo}>
-                                <text x="10" y="77" fontFamily="Arial" fontSize="73">B</text>
-                                <text x="46" y="77" fontFamily="Arial" fontSize="73">S</text>
+                        {/* <img viewBox="0 0 100 100" className={classes.logo} src={logo} alt="Brett Sevy" /> */}
+                        <svg viewBox="0 0 100 100" className={classes.logo}>
+                            <text x="10" y="77" fontFamily="Arial" fontSize="73">B</text>
+                            <text x="46" y="77" fontFamily="Arial" fontSize="73">S</text>
 
-                            </svg>
+                        </svg>
                         {/* </Switch> */}
                         <Typography className={classes.menu}>
                             {/* <Link
@@ -146,7 +149,7 @@ export default function LandingPageHeader() {
                                 underline="none">
                                 CONTACT</Link> */}
 
-                             
+
                         </Typography>
                         <SocialNetwork className={classes.networks} />
                     </Toolbar>
@@ -165,4 +168,4 @@ export default function LandingPageHeader() {
             </Parallax>
         </div>
     );
-                              }
+}
