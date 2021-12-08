@@ -4,12 +4,13 @@ import { Switch, Route } from 'react-router-dom'
 import LandingPage from './Components/Pages/LandingPage'
 import PhotographyPage from './Components/Pages/PhotographyPage'
 import WebDevPage from './Components/Pages/WebDevPage'
+import { BrowserRouter } from 'react-router-dom';
 
 
 export default function App() {
  
   return (
-    
+    <BrowserRouter basename="/photo">
       <div>
           <Switch>
               <Route exact path ="/" component={LandingPage}></Route>
@@ -21,5 +22,6 @@ export default function App() {
           </Switch>
           
       </div>
+      </BrowserRouter>
   )
 }
