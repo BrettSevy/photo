@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageList from '../ImageList/ImageList';
+// import ImageList from '../ImageList/ImageList';
 // import Modal from '../Modal/Modal';
 import './PhotographyPage.css';
 import PhotoHeader from '../PhotoHeader';
@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 // import About from '../About';
 import Contact from '../Contact/index'
+import Gallery from '../ImageList/Gallery';
 
 const theme = createMuiTheme({
   spacing: 5,
@@ -30,7 +31,7 @@ function PhotographyPage() {
       {/* <About/> */}
            {/* <ImageGrid setSelectedImg={setSelectedImg} />
       {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />} */}
-      <ImageList/>
+      <Gallery/>
       <Contact/>
       
       </ThemeProvider>

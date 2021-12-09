@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles, Typography, Box, Container, Divider, Grid } from "@material-ui/core";
-import portrait from "./assets/portrait.JPG";
+import portrait from "./assets/13.jpg";
 
 
 const useStyles = makeStyles(theme => ({
@@ -21,9 +21,9 @@ const useStyles = makeStyles(theme => ({
     },
     portrait: {
         height: theme.spacing(50),
-        borderRadius: "50%",
+        // borderRadius: "50%",
         float: "left",
-        shapeOutside: "circle(50%)",
+        // shapeOutside: "circle(50%)",
         marginRight: theme.spacing(6),
         [theme.breakpoints.down('sm')]: {
             paddingRight: theme.spacing(0),

@@ -162,8 +162,8 @@ export default function LandingPageHeader() {
                 </Background>
 
                 <div className={classes.parallax}>
-                    <Typography variant="h2" className={classes.name} data-aos="fade-right" data-aos-duration="1500">Brett</Typography>
-                    <Typography className={classes.title} variant="h2" data-aos="fade-left" data-aos-duration="1500">Sevy</Typography>
+                    <Typography variant="h1" className={classes.name} data-aos="fade-right" data-aos-duration="1500">Brett</Typography>
+                    <Typography className={classes.title} variant="h1" data-aos="fade-left" data-aos-duration="1500">Sevy</Typography>
                 </div>
             </Parallax>
         </div>
