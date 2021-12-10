@@ -8,7 +8,7 @@ const useStyles = makeStyles(theme => ({
         height: theme.spacing(85),
         paddingTop: theme.spacing(10),
         "& .MuiDivider-root": {
-            background: "#FFFFFF"
+            background: "white"
         }
     },
     footer: {

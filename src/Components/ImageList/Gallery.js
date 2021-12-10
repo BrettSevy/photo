@@ -23,7 +23,10 @@ import image16 from "./images/16.jpg";
 import image17 from "./images/17.jpg";
 import image18 from "./images/18.jpg";
 import image19 from "./images/19.jpg";
-import { Close } from '@material-ui/icons';
+import image20 from "./images/20.jpg";
+import image21 from "./images/21.jpg";
+import image22 from "./images/22.jpg";
+
 
 const Gallery = () => {
 
@@ -120,6 +123,21 @@ const Gallery = () => {
     {
       id: 19,
       imgSrc: image19,
+
+    },
+    {
+      id: 20,
+      imgSrc: image20,
+
+    },
+    {
+      id: 21,
+      imgSrc: image21,
+
+    },
+    {
+      id: 22,
+      imgSrc: image22,
 
     },
 

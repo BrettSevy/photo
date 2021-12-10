@@ -4,6 +4,8 @@ import { Parallax, Background } from "react-parallax";
 import SocialNetwork from "../SocialNetwork";
 import backgroundImage from "./assets/5.jpg";
 // import logo from "./assets/whitesmall.jpeg";
+import LandingPageLinks from '../LandingPageLinks/LandingPageLinks';
+
 
 
 const useStyles = makeStyles(theme => ({
@@ -37,7 +39,7 @@ const useStyles = makeStyles(theme => ({
         color: "#FF87B7",
     },
     parallax: {
-        height: "100vh",
+        height: "200vh",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
@@ -164,6 +166,7 @@ export default function LandingPageHeader() {
                 <div className={classes.parallax}>
                     <Typography variant="h1" className={classes.name} data-aos="fade-right" data-aos-duration="1500">Brett</Typography>
                     <Typography className={classes.title} variant="h1" data-aos="fade-left" data-aos-duration="1500">Sevy</Typography>
+                    <LandingPageLinks />
                 </div>
             </Parallax>
         </div>

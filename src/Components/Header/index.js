@@ -10,6 +10,15 @@ import backgroundImage from "./assets/parallax.jpeg";
 
 const useStyles = makeStyles(theme => ({
 
+    typography: {
+        fontFamily: [
+            'Comforter Brush',
+            'cursive',
+            'Mate SC',
+            'serif',
+        ].join(','),
+      },
+
     appbar: {
         background: "#263145"
     },
@@ -63,7 +72,7 @@ const useStyles = makeStyles(theme => ({
             }
         }
     },
-    
+
 }))
 
 
@@ -77,17 +86,17 @@ export default function Header() {
             <AppBar className={classes.appbar}>
                 <Container maxWidth="md">
                     <Toolbar className={classes.toolbar}>
-                    {/* <Switch
+                        {/* <Switch
                             to="/WebDev"
                         smooth={true}
                         spy={true}
                         duration={600}
                         > */}
-                            <svg viewBox="0 0 100 100" className={classes.logo}>
-                                <text x="10" y="77" fontFamily="Arial" fontSize="73">B</text>
-                                <text x="46" y="77" fontFamily="Arial" fontSize="73">S</text>
+                        <svg viewBox="0 0 100 100" className={classes.logo}>
+                            <text x="10" y="77" fontFamily="Arial" fontSize="73">B</text>
+                            <text x="46" y="77" fontFamily="Arial" fontSize="73">S</text>
 
-                            </svg>
+                        </svg>
                         {/* </Switch> */}
                         <Typography className={classes.menu}>
                             {/* <Link
@@ -131,7 +140,7 @@ export default function Header() {
                                 underline="none">
                                 CONTACT</Link> */}
 
-                             
+
                         </Typography>
                         <SocialNetwork className={classes.networks} />
                     </Toolbar>

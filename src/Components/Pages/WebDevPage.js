@@ -6,7 +6,7 @@ import Skills from "../Skills";
 import Projects from "../Projects";
 import Contact from "../Contact";
 import { Helmet } from "react-helmet";
-import './WebDevPage.css';
+
 // import FaviconSvg from "./assets/favicon.svg";
 // import FaviconJPG from "./assets/favicon.jpg";
 
@@ -17,6 +17,13 @@ const theme = createMuiTheme({
     values: {
       md: 1100,
     }
+  },
+  
+  typography: {
+    fontFamily: [
+        'Rock Salt',
+        'cursive',
+    ].join(','),
   }
 });
 

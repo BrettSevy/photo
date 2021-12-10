@@ -33,10 +33,12 @@ const useStyles = makeStyles(theme => ({
         },
     },
     timeline: {
-        borderLeft: "2px solid grey",
+        borderLeft: "2px solid gray",
         padding: theme.spacing(1.4, 10),
         [theme.breakpoints.down(1100)]: {
-            display: "none"
+            display: "block",
+            position: "relative",
+            
         }
     },
     timelineItem: {

@@ -1,7 +1,4 @@
 import React from 'react';
-// import ImageList from '../ImageList/ImageList';
-// import Modal from '../Modal/Modal';
-import './PhotographyPage.css';
 import PhotoHeader from '../PhotoHeader';
 import { Helmet } from "react-helmet";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
@@ -15,25 +12,39 @@ const theme = createMuiTheme({
     values: {
       md: 1100,
     }
-  }
+  },
+  
+  typography: {
+    fontFamily: [
+      'Sedgwick Ave Display',
+      'cursive',
+    ].join(','),
+  },
+  
+  footer: {
+    background: "black",
+    "& .MuiDivider-root": {
+        background: "red"
+    }},
 });
+
 
 function PhotographyPage() {
   // const [selectedImg, setSelectedImg,] = useState(null);
 
   return (
     <>
-    <Helmet>
-      <title>Brett Sevy</title>
+      <Helmet>
+        <title>Brett Sevy</title>
       </Helmet>
       <ThemeProvider theme={theme}>
-      <PhotoHeader/>
-      {/* <About/> */}
-           {/* <ImageGrid setSelectedImg={setSelectedImg} />
+        <PhotoHeader />
+        {/* <About/> */}
+        {/* <ImageGrid setSelectedImg={setSelectedImg} />
       {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />} */}
-      <Gallery/>
-      <Contact/>
-      
+        <Gallery />
+        <Contact />
+
       </ThemeProvider>
     </>
   );

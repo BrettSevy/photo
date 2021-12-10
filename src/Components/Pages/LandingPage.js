@@ -3,7 +3,7 @@ import LandingPageHeader from '../LandingPageHeader/Index';
 import LandingPageLinks from '../LandingPageLinks/LandingPageLinks';
 import { Helmet } from "react-helmet";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
-import './LandingPage.css';
+// import './LandingPage.css';
 import Contact from '../Contact/index'
 
 
@@ -13,8 +13,15 @@ const theme = createMuiTheme({
     values: {
       md: 1100,
     }
-  }
-});
+  },
+
+typography: {
+  fontFamily: [
+    'Sedgwick Ave Display',
+      'cursive',
+  ].join(','),
+}});
+
 
 function LandingPage() {
   return (
@@ -26,7 +33,7 @@ function LandingPage() {
       </Helmet>
       <ThemeProvider theme={theme}>
       <LandingPageHeader />
-      <LandingPageLinks />
+      {/* <LandingPageLinks /> */}
       <Contact/>
       </ThemeProvider>
       
