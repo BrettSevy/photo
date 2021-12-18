@@ -11,28 +11,38 @@ import { Link as RouterLink } from 'react-router-dom'
 const useStyles = makeStyles({
     root: {
         maxWidth: 645,
-        background: '#D0D0D0',
+        // background: 'red',
         margin: '20px',
+        border: '20px',
         
     },
+
+   
     media: {
 
         height: '50vh',
         width: '75vh',
+        // padding: '100% ',
+        // justifyContent: 'center',
+        color: '#3f3446',
         
-        filter: 'grayscale(100%)',
+        filter: 'grayscale(75%)',
         "&:hover": {
-            filter: 'grayscale(0%)',
-            cursor: "pointer"
+            filter: 'grayscale(10%)',
+            cursor: "pointer",
+            color: '#726c91',
         }
     },
     title: {
-        fontWeight: 'bold',
+        // fontWeight: 'bold',
         fontSize: '2rem',
-        color: '#FF87B7',
         textAlign: 'center',
         position: 'relative',
         top: '25%',
+        "&:hover": {
+            
+           
+        }
         // left: '50%',
         // position: 'absolute',
         // margin: '0',
@@ -52,7 +62,10 @@ export default function ImageCard({ place }) {
         <div>
             <Card className={classes.root}>
                 <CardActionArea component={RouterLink} to={'/' + (place.link)}>
-                    <CardMedia className={classes.media} image={place.imageUrl} title={'Brett Sevy ' + (place.title)} >
+                    <CardMedia className={classes.media} 
+                    image={place.imageUrl}
+                    title={'Brett Sevy ' + (place.title)} 
+                    >
                     <Typography gutterbottom variant="h5" component="h2" className={classes.title} >
                 {place.title}
                     </Typography>

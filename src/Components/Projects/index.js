@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
     root: {
         minHeight: `calc(100vh - ${theme.spacing(35)}px)`,
         padding: theme.spacing(20, 0, 15, 0),
-        backgroundColor: 'white',
+        backgroundColor: '#ffffff',
         "& Button:nth-child(n+2)": {
             marginLeft: theme.spacing(5)
         },
@@ -29,8 +29,15 @@ const useStyles = makeStyles(theme => ({
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "space-around",
-
+        
     },
+
+    
+    title:{
+        color: '#726C91'
+    },
+
+
     "@global": {
         ".MuiBox-root-281": {
             [theme.breakpoints.down(680)]: {
@@ -57,7 +64,7 @@ export default function Projects() {
         <div id="projects" className={classes.root}>
             <Container maxWidth="md">
                 <Box mb={10}>
-                    <Typography variant="h3" data-aos="fade-right" data-aos-duration="1000" classeName={classes.title}>Projects</Typography>
+                    <Typography variant="h3" data-aos="fade-right" data-aos-duration="1000" className={classes.title}>PROJECTS</Typography>
                     <Divider />
                 </Box>
                 <Box mb={10} >
@@ -68,7 +75,7 @@ export default function Projects() {
                 <Box className={classes.card}>
                     {(categoriesToShow.includes("team") ? <Card
                         image={whiskey}
-                        title="Whisket"
+                        title="WHISKET"
                         alt="Whisket"
                         tools="MERN stack"
                         text="compare different whiskeys and vote on which you like with friends"
@@ -78,7 +85,7 @@ export default function Projects() {
                     /> : null)}
                     {(categoriesToShow.includes("projects") ? <Card
                         image={googlebooks}
-                        title="Google Books"
+                        title="GOOGLE BOOKS"
                         alt="Google Books"
                         tools="MERN stack"
                         text="Display books based on user searches. Use of Express.js and MongoDB so that users can save books to review or purchase later"
@@ -88,9 +95,9 @@ export default function Projects() {
                     /> : null)}
                     {(categoriesToShow.includes("projects") ? <Card
                         image={fitness}
-                        title="Fitness Tracker"
+                        title="FITNESS TRACKER"
                         alt="Fitness Tracker"
-                        tools="MongoDB, Express, JavaScript"
+                        tools="MONGO DB, Express, JavaScript"
                         text=" View, create, and track daily workouts."
                         github="https://github.com/BrettSevy/hwFitnessTracker"
                         heroku="https://limitless-journey-76220.herokuapp.com/"
@@ -98,7 +105,7 @@ export default function Projects() {
                     /> : null)}
                     {(categoriesToShow.includes("team") ? <Card
                         image={stocks}
-                        title="Stocks"
+                        title="STOCKS"
                         alt="Stocks"
                         text="Compare your stock portfolio and track stocks you are interested in"
                         tools="JQuery, Handlebars, MySQL, Sequelize"
@@ -108,7 +115,7 @@ export default function Projects() {
                     /> : null)}
                     {(categoriesToShow.includes("projects") ? <Card
                         image={burgers}
-                        title="Eat the Burgers"
+                        title="EAT THE BURGERS"
                         alt="Eat the Burgers"
                         tools="MySQL, Express, Handlebars, ORM"
                         text="Add, eat and track burgers you've eaten or would like to eat."
@@ -118,19 +125,19 @@ export default function Projects() {
                     /> : null)}
                     {(categoriesToShow.includes("projects") ? <Card
                         image={notetaker}
-                        title="Note Taker"
+                        title="NOTE TAKER"
                         alt="Note Taker"
                         text="App that allows the user to write/save/ and delete notes for better orginization."
-                        tools="Node.js Express, JSON"
+                        tools="NODE.js Express, JSON"
                         github="https://github.com/BrettSevy/hwNotetaker"
                         heroku="https://floating-oasis-90629.herokuapp.com/"
                         locked={false}
                     /> : null)}
                     {(categoriesToShow.includes("projects") ? <Card
                         image={teamgenerator}
-                        title="Work Team Generator"
+                        title="WORK TEAM GENERATOR"
                         alt="Team Generator"
-                        tools="Node.js, Express, ES6"
+                        tools="NODE.js, Express, ES6"
                         text="The application will generate a team page that displays a nicely formatted team roster based on user input from the terminal"
                         github="https://github.com/BrettSevy/hwTeamGenerator"
                         heroku="https://github.com/BrettSevy/hwTeamGenerator"
@@ -138,7 +145,7 @@ export default function Projects() {
                     /> : null)}
                     {(categoriesToShow.includes("team") ? <Card
                         image={coinflip}
-                        title="Coin Flip"
+                        title="COIN FLIP"
                         alt="CoinFlip"
                         text="after flipping the quarter the user receive a joke or a GIF"
                         tools="API, JavaScript, HTML, CSS"
@@ -148,7 +155,7 @@ export default function Projects() {
                     /> : null)}
                     {(categoriesToShow.includes("projects") ? <Card
                         image={weather}
-                        title="Weather Dashboard"
+                        title="WEATHER DASHBOARD"
                         alt="Weather Dashboard"
                         tools="JavaScript, Jquery, OpenWeather API"
                         text="Seach for weather in any city, also receive a 5 day forcast"
@@ -158,7 +165,7 @@ export default function Projects() {
                     /> : null)}
                     {(categoriesToShow.includes("projects") ? <Card
                         image={planner}
-                        title="Day Planner"
+                        title="DAY PLANNER"
                         alt="day planner"
                         text="Schedule hourly events daily"
                         tools="JavaScript, JQuery"
@@ -168,7 +175,7 @@ export default function Projects() {
                     /> : null)}
                     {(categoriesToShow.includes("projects") ? <Card
                         image={quiz}
-                        title="Kobe Bryant Quiz"
+                        title="KOBE BRYANT QUIZ"
                         alt="Kobe Bryant Quiz"
                         tools="HTML5, CSS, JavaScript"
                         text="How well do you know Kobe Bryant?"
@@ -178,7 +185,7 @@ export default function Projects() {
                     /> : null)}
                     {(categoriesToShow.includes("projects") ? <Card
                         image={password}
-                        title="Password Generator"
+                        title="PASSWORD GENERATOR"
                         alt="Password Generator"
                         text="Generates a password based on user input"
                         tools="HTML5, CSS, JavaScript"

@@ -2,69 +2,75 @@ import React from "react";
 import { Container, makeStyles, Typography, AppBar, Toolbar } from "@material-ui/core";
 import { Parallax, Background } from "react-parallax";
 import SocialNetwork from "../SocialNetwork";
-import backgroundImage from "./assets/5.jpg";
-// import logo from "./assets/whitesmall.jpeg";
+import backgroundImage from "./assets/purple.jpg";
+import logo from "./assets/logomain.png";
+import logo2 from "./assets/mainlogosm.png";
 import LandingPageLinks from '../LandingPageLinks/LandingPageLinks';
-
 
 
 const useStyles = makeStyles(theme => ({
 
+
+
+    typography: {
+        fontFamily: [
+            'HansiefRough',
+            'Roboto',
+            'sans-serif',
+
+        ].join(','),
+    },
+
     appbar: {
-        background: "#8F8E8E"
+        background: "#726C91"
     },
     menu: {
         flexGrow: 1,
+
     },
     menuItem: {
         marginLeft: theme.spacing(5),
+        fill: "#ffffff",
         "&:hover": {
-            color: "#FF87B7",
+            color: "#C6BFD2",
             cursor: "pointer"
         }
     },
     logo: {
         height: theme.spacing(9),
-        fill: "#D0D0D0",
+        fill: "#ffffff",
         "&:hover": {
-            fill: "#FF87B7",
+            fill: "#C6BFD2",
             cursor: "pointer"
         }
     },
     name: {
-        color: props => props.color,
+        color: "#726C91",
         fontWeight: 400,
     },
     title: {
-        color: "#FF87B7",
+        color: "#000000",
     },
     parallax: {
         height: "200vh",
+        objectFit: 'scale-down',
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         textAlign: "center",
-        minHeight: '100vh',
-        alignItems: 'center',
-
 
     },
-    custombg: {
-        // backgroundsize: 'contain',
-        // filter: 'blur(1px)',
-        // width: '400%',
-        // height: 'auto',
-        // justifyContent: 'bottom',
-    },
 
-    LandingPageHeader: {
-        // background: "#8F8E8E",
-        height: "145vh",
+    backgroundImage: {
+
+        height: "100px",
         width: "100%",
-        objectFit: "cover",
-        display: "flex",
+        backgroundPosition: "center",
+        backgroundSize: "200px",
         backgroundAttachment: "fixed",
         backgroundRepeat: "no-repeat",
+
+
     },
     "@global": {
         ".MuiToolbar-root": {
@@ -75,20 +81,12 @@ const useStyles = makeStyles(theme => ({
             }
         }
     },
-}))
 
-// #FF87B7 pink
-// #F9CADD light pink
-// #2F2F2F darkest gray
-// #4B4B4B 
-// #575757 
-// #8F8E8E
-// #BCBCBC
-// #D0D0D0 lightest gray
+}))
 
 
 export default function LandingPageHeader() {
-    const props = { color: '#8F8E8E' };
+    const props = { color: 'pink' };
     const classes = useStyles(props);
 
     return (
@@ -103,11 +101,12 @@ export default function LandingPageHeader() {
                         duration={600}
                         > */}
                         {/* <img viewBox="0 0 100 100" className={classes.logo} src={logo} alt="Brett Sevy" /> */}
-                        <svg viewBox="0 0 100 100" className={classes.logo}>
-                            <text x="10" y="77" fontFamily="Arial" fontSize="73">B</text>
-                            <text x="46" y="77" fontFamily="Arial" fontSize="73">S</text>
+                        {/* <svg viewBox="0 0 100 100" className={classes.logo}> */}
+                        {/* <text x="10" y="77" fontFamily="Arial" fontSize="73">B</text> */}
+                        <img src={logo2} viewBox="0 0 100 100" className={classes.logo} alt="Brett Sevy" />
+                        {/* <text x="46" y="77" fontFamily="Arial" fontSize="73">S</text> */}
 
-                        </svg>
+                        {/* </svg> */}
                         {/* </Switch> */}
                         <Typography className={classes.menu}>
                             {/* <Link
@@ -160,12 +159,13 @@ export default function LandingPageHeader() {
 
             <Parallax strength={300}>
                 <Background className={classes.custombg}>
-                    <img src={backgroundImage} alt="Brett Sevy" />
+                    <img src={backgroundImage} alt="Brett Sevy" style={{height: '250vh'}}/>
                 </Background>
 
                 <div className={classes.parallax}>
-                    <Typography variant="h1" className={classes.name} data-aos="fade-right" data-aos-duration="1500">Brett</Typography>
-                    <Typography className={classes.title} variant="h1" data-aos="fade-left" data-aos-duration="1500">Sevy</Typography>
+                    <img src={logo} alt="Brett Sevy" />
+                    {/* <Typography variant="h1" className={classes.name} data-aos="fade-right" data-aos-duration="1500">Brett</Typography>
+                    <Typography className={classes.title} variant="h1" data-aos="fade-left" data-aos-duration="1500">Sevy</Typography> */}
                     <LandingPageLinks />
                 </div>
             </Parallax>

@@ -4,4 +4,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: "HansiefRough";
+  src: local("HansiefRough"),
+   url("./Components/Fonts/HansiefRough.otf") format("truetype");
+  }
 

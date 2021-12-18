@@ -4,82 +4,95 @@ import { Parallax, Background } from "react-parallax";
 import SocialNetwork from "../SocialNetwork";
 // import { Link } from "react-scroll";
 import { BrowserRouter as Switch } from 'react-router-dom';
-import backgroundImage from './images/15.jpg';
+import backgroundImage from './images/purple.jpg';
+import logo from "./images/logocamera.png";
+import logo2 from "./images/cameralogosm.png";
 
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(phototheme => ({
+
+
+
+    typography: {
+        fontFamily: [
+            'HansiefRough',
+            'Roboto',
+            'sans-serif',
+
+        ].join(','),
+    },
 
     appbar: {
-        background: "#8F8E8E"
+        background: "#726C91"
     },
     menu: {
         flexGrow: 1,
+
     },
     menuItem: {
-        marginLeft: theme.spacing(5),
+        marginLeft: phototheme.spacing(5),
+        fill: "#ffffff",
         "&:hover": {
-            color: "#FF87B7",
+            color: "#C6BFD2",
             cursor: "pointer"
         }
     },
     logo: {
-        height: theme.spacing(9),
-        fill: "#fff",
+        height: phototheme.spacing(9),
+        fill: "#ffffff",
         "&:hover": {
-            fill: "#FF87B7",
+            fill: "#C6BFD2",
             cursor: "pointer"
         }
     },
     name: {
-        color: props => props.color,
+        color: "#726C91",
         fontWeight: 400,
     },
     title: {
-        color: "#FF87B7",
+        color: "#000000",
     },
     parallax: {
         height: "100vh",
-        objectFit: 'contain',
+        Position: 'center',
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         textAlign: "center",
-    },
 
-    LandingPageHeader: {
+
     },
-    
-    custombg: {
-        background: "#8F8E8E",
-        height: "145vh",
+   
+
+    PhotoHeader: {
+
+        height: "100vh",
         width: "100%",
-        objectFit: "cover",
-        display: "flex",
+        backgroundSize: "contain",
         backgroundAttachment: "fixed",
-        backgroundRepeat: "no-repeat",
-        // filter: 'blur(1px)',
-        // height: '50vh',
+        backgroundRepeat: "no-repeat"
     },
 
     "@global": {
         ".MuiToolbar-root": {
-            [theme.breakpoints.down(680)]: {
+            [phototheme.breakpoints.down(680)]: {
                 display: "flex",
                 flexDirection: "column",
-                padding: theme.spacing(2)
+                padding: phototheme.spacing(2)
             }
         }
     },
+
 }))
 
 
-export default function Header() {
-    const props = { color: 'white' };
+export default function PhotoHeader() {
+    const props = { color: 'red' };
     const classes = useStyles(props);
 
 
     return (
-        <div id="header">
+        <div id="PhotoHeader">
             <AppBar className={classes.appbar}>
                 <Container maxWidth="md">
                     <Toolbar className={classes.toolbar}>
@@ -89,11 +102,12 @@ export default function Header() {
                         // spy={true}
                         // duration={600}
                         >
-                            <svg viewBox="0 0 100 100" className={classes.logo}>
+                            {/* <svg viewBox="0 0 100 100" className={classes.logo}>
                                 <text x="10" y="77" fontFamily="Arial" fontSize="73">B</text>
                                 <text x="46" y="77" fontFamily="Arial" fontSize="73">S</text>
 
-                            </svg>
+                            </svg> */}
+                            <img src={logo2} viewBox="0 0 100 100" className={classes.logo} alt="Brett Sevy" />
                         </Switch>
                         <Typography className={classes.menu}>
                             {/* <Link
@@ -142,23 +156,17 @@ export default function Header() {
                 </Container>
             </AppBar>
 
-            {/* <Parallax
-                blur={10}
-                bgImage={require('./images/IMG_01.jpg')}
-                bgImageAlt="background"
-                strength={300}
+            <Parallax strength={-200}>
 
-            > */}
-
-            <Parallax strength={300}>
-                <Background className={classes.custombg}>
-                    <img src={backgroundImage} alt="Brett Sevy Web Developer" />
+                <Background className='custom-bg' >
+                    <img src={backgroundImage} alt="Brett Sevy Web Developer" style={{height: '200vh'}}/>
                 </Background>
 
 
                 <div className={classes.parallax}>
-                    <Typography variant="h1" className={classes.name} data-aos="fade-right" data-aos-duration="1500">Brett Sevy</Typography>
-                    <Typography className={classes.title} variant="h3" data-aos="fade-left" data-aos-duration="1500"> Photography</Typography>
+                    <img src={logo} alt="Brett Sevy" />
+                    {/* <Typography variant="h1" className={classes.name} data-aos="fade-right" data-aos-duration="1500">Brett Sevy</Typography>
+                    <Typography className={classes.title} variant="h3" data-aos="fade-left" data-aos-duration="1500"> Photography</Typography> */}
                 </div>
             </Parallax>
         </div >

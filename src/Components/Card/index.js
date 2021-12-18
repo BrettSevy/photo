@@ -20,11 +20,11 @@ const useStyles = makeStyles(theme => ({
         borderRadius: theme.spacing(radius)
     },
     content: {
-        color: "#fff",
+        color: "#726C91",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        background: "#19232f",
+        background: "#ffffff",
         position: "absolute",
         top: 0,
         left: 0,
@@ -45,16 +45,22 @@ const useStyles = makeStyles(theme => ({
 
     },
     title: {
-        color: "#FA0063",
+        color: "#3F3446",
     },
     description: {
-        lineHeight: 1.8
+        lineHeight: 1.8,
+        fontFamily: [
+            'Roboto', 
+            'sans-serif',
+            
+        ].join(','),
     },
+
     icons: props => ({
-        color: "#fff",
+        color: "#3F3446",
         "&:hover": {
             cursor: props.locked ? "not-allowed" : "pointer",
-            color: "black",
+            color: "#726C91",
         }
     })
 }));

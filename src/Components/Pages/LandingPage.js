@@ -1,6 +1,6 @@
 import React from 'react';
 import LandingPageHeader from '../LandingPageHeader/Index';
-import LandingPageLinks from '../LandingPageLinks/LandingPageLinks';
+// import LandingPageLinks from '../LandingPageLinks/LandingPageLinks';
 import { Helmet } from "react-helmet";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 // import './LandingPage.css';
@@ -17,8 +17,8 @@ const theme = createMuiTheme({
 
 typography: {
   fontFamily: [
-    'Sedgwick Ave Display',
-      'cursive',
+    'HansiefRough',
+    
   ].join(','),
 }});
 

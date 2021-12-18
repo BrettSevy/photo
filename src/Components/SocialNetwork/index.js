@@ -1,4 +1,4 @@
-  
+
 import React from "react";
 import { makeStyles, IconButton, Link } from "@material-ui/core";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -14,10 +14,12 @@ const useStyles = makeStyles(theme => ({
         padding: theme.spacing(1)
     },
     icons: {
-        fill: "#D0D0D0",
-            // fill: "#FA0063",
-            // cursor: "pointer"}
-    },
+        fill: "#ffffff",
+        "&:hover": {
+            fill: "#C6BFD2",
+            cursor: "pointer"
+        }
+    }
 }));
 
 

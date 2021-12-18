@@ -2,50 +2,58 @@ import React from "react";
 import { Container, makeStyles, Typography, AppBar, Toolbar } from "@material-ui/core";
 import { Parallax, Background } from "react-parallax";
 import SocialNetwork from "../SocialNetwork";
-// import { Link } from "react-scroll";
-import backgroundImage from "./assets/parallax.jpeg";
+import { Link } from "react-scroll";
+import backgroundImage from "./assets/parallax.jpg";
 // import { Switch } from "react-router-dom";
+import '../Fonts/HansiefRough.otf';
+import logo2 from "./assets/codingLogo.png";
+import logo from "./assets/codinglogosm.png";
+
 
 
 
 const useStyles = makeStyles(theme => ({
 
+    
+
     typography: {
         fontFamily: [
-            'Comforter Brush',
-            'cursive',
-            'Mate SC',
-            'serif',
+            'HansiefRough',
+            'Roboto', 
+            'sans-serif',
+            
         ].join(','),
       },
 
     appbar: {
-        background: "#263145"
+        background: "#726C91"
     },
     menu: {
         flexGrow: 1,
+        
     },
     menuItem: {
         marginLeft: theme.spacing(5),
+        fill: "#ffffff",
         "&:hover": {
-            color: "#FA0063",
+            color: "#C6BFD2",
             cursor: "pointer"
         }
     },
     logo: {
         height: theme.spacing(9),
-        fill: "#fff",
+        fill: "#ffffff",
         "&:hover": {
-            fill: "#FA0063",
+            fill: "#C6BFD2",
             cursor: "pointer"
         }
     },
     name: {
-        color: props => props.color,
+        color: "#726C91",
         fontWeight: 400,
     },
     title: {
-        color: "#FA0063",
+        color: "#000000",
     },
     parallax: {
         height: "100vh",
@@ -56,7 +64,7 @@ const useStyles = makeStyles(theme => ({
 
     },
     header: {
-        background: "#263145",
+       
         height: "100vh",
         width: "100%",
         backgroundSize: "cover",
@@ -77,7 +85,7 @@ const useStyles = makeStyles(theme => ({
 
 
 export default function Header() {
-    const props = { color: '#fff' };
+    const props = { color: '#000000' };
     const classes = useStyles(props);
 
 
@@ -92,14 +100,16 @@ export default function Header() {
                         spy={true}
                         duration={600}
                         > */}
-                        <svg viewBox="0 0 100 100" className={classes.logo}>
+                        <img src={logo} viewBox="0 0 100 100" className={classes.logo} alt="Brett Sevy" />
+                        {/* <svg viewBox="0 0 100 100" className={classes.logo}>
+                       
                             <text x="10" y="77" fontFamily="Arial" fontSize="73">B</text>
                             <text x="46" y="77" fontFamily="Arial" fontSize="73">S</text>
 
-                        </svg>
+                        </svg> */}
                         {/* </Switch> */}
                         <Typography className={classes.menu}>
-                            {/* <Link
+                            <Link
                                 to="about"
                                 smooth={true}
                                 spy={true}
@@ -138,7 +148,7 @@ export default function Header() {
                                 variant="h6"
                                 className={classes.menuItem}
                                 underline="none">
-                                CONTACT</Link> */}
+                                CONTACT</Link>
 
 
                         </Typography>
@@ -155,8 +165,9 @@ export default function Header() {
 
 
                 <div className={classes.parallax}>
-                    <Typography variant="h1" className={classes.name} data-aos="fade-right" data-aos-duration="1500">Brett Sevy</Typography>
-                    <Typography className={classes.title} variant="h3" data-aos="fade-left" data-aos-duration="1500"> Web Developer</Typography>
+                <img src={logo2} alt="Brett Sevy" />
+                    {/* <Typography variant="h1" className={classes.name} data-aos="fade-right" data-aos-duration="1500">Brett Sevy</Typography>
+                    <Typography className={classes.title} variant="h3" data-aos="fade-left" data-aos-duration="1500"> Web Developer</Typography> */}
                 </div>
             </Parallax>
         </div>

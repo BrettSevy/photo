@@ -9,9 +9,10 @@ const useStyles = makeStyles(theme => ({
         width: "100%",
         padding: theme.spacing(20, 0, 15, 0),
         backgroundSize: "cover",
-        backgroundColor: 'white',
+        backgroundColor: '#ffffff',
         backgroundAttachment: "fixed",
         backgroundRepeat: "no-repeat",
+        color: "#000000",
         "& .MuiGrid-grid-md-8": {
             paddingRight: theme.spacing(10),
             [theme.breakpoints.down(1100)]: {
@@ -20,7 +21,7 @@ const useStyles = makeStyles(theme => ({
         },
     },
     portrait: {
-        height: theme.spacing(50),
+        height: theme.spacing(55),
         // borderRadius: "50%",
         float: "left",
         // shapeOutside: "circle(50%)",
@@ -32,8 +33,22 @@ const useStyles = makeStyles(theme => ({
             height: theme.spacing(30),
         },
     },
+
+    aboutMeTitle:{
+        color: '#726C91',
+
+    },
+
+    description: {
+        fontFamily: [
+            'Roboto', 
+            'sans-serif',
+        ].join(','),
+        color: '#000000',
+    },
+
     timeline: {
-        borderLeft: "2px solid gray",
+        borderLeft: "2px solid #3F3446",
         padding: theme.spacing(1.4, 10),
         [theme.breakpoints.down(1100)]: {
             display: "block",
@@ -42,16 +57,21 @@ const useStyles = makeStyles(theme => ({
         }
     },
     timelineItem: {
+        fontFamily: [
+            'HansiefRough', 
+            'sans-serif',
+        ].join(','),
         lineHeight: 2,
         position: "relative",
         "&:nth-child(-n+2)": {
             paddingBottom: theme.spacing(8),
+            color: '#3F3446'
         }
     },
     date: {
         paddingBottom: theme.spacing(3),
+        fontWeight: "bold",
         "&:first-child": {
-            fontWeight: "bold",
             position: "relative",
             fontSize: theme.spacing(2.7),
             paddingTop: 0,
@@ -65,8 +85,8 @@ const useStyles = makeStyles(theme => ({
             position: "absolute",
             top: theme.spacing(0.4),
             left: theme.spacing(-11.6),
-            background: "white",
-            border: "2px solid grey"
+            background: "#ffffff",
+            border: "2px solid #726C91",
         },
     }
 }))
@@ -77,8 +97,8 @@ export default function About() {
     return (
         <div id="about" className={classes.root}>
             <Container maxWidth="md">
-                <Box mb={10}>
-                    <Typography variant="h3" data-aos="fade-right" data-aos-duration="1000"> About Me</Typography>
+                <Box className={classes.aboutMeTitle} mb={10}>
+                    <Typography variant="h3" data-aos="fade-right" data-aos-duration="1000"> ABOUT ME</Typography>
                     <Divider />
                 </Box>
                 <Grid container>
@@ -111,10 +131,10 @@ export default function About() {
                     <Grid item md={4}>
                         <div className={classes.timeline}>
                             <div className={classes.timelineItem}>
-                                <Typography className={classes.date} > Jan 2020 - April 2020 </Typography>
-                                <Typography variant="h6"> Southern Methodist University </Typography>
-                                <Typography variant="p"> Full Stack Web Development Coding</Typography>
-                                <Typography variant="body2"> Dallas, Texas </Typography>
+                                <Typography className={classes.date} > JAN 2020 - APR 2020 </Typography>
+                                <Typography variant="h6"> SOUTHERN METHODIST UNIVERSITY </Typography>
+                                <Typography variant="p"> FULL STACK WEB DEVELOPMENT</Typography>
+                                <Typography variant="body2"> DALLAS, TEXAS </Typography>
 
                             </div>
                         </div>

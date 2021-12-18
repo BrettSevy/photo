@@ -4,7 +4,7 @@ import html from "./assets/html.png";
 import css from "./assets/css.png";
 import bootstrap from "./assets/bootstrap.png";
 // import materialize from "./assets/materialize.png";
-// import material from "./assets/material.svg";
+import material from "./assets/material.svg";
 import javascript from "./assets/js.png";
 import react from "./assets/react.png";
 import jquery from "./assets/jquery.png";
@@ -20,7 +20,8 @@ const useStyles = makeStyles(theme => ({
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
         backgroundRepeat: "no-repeat",
-        background: "#fafafa",
+        background: "#ffffff",
+        color: '#726C91',
         "& .MuiGrid-item": {
             display: "flex",
             flexDirection: "column",
@@ -33,15 +34,21 @@ const useStyles = makeStyles(theme => ({
             justifyContent: "center",
         }
     },
+    paper: {
+        background: '#3F3446',
+        color: '#C6BFD2'
+
+    },
     logos: {
         height: 60,
-        filter: "grayscale(90%)",
+        filter: "grayscale(100%)",
         "&:hover": {
-            filter: "grayscale(10%)"
+            filter: "grayscale(35%)"
         }
     },
     title: {
-        fontWeight: "bold"
+        fontWeight: "bold",
+
     },
 }));
 
@@ -54,13 +61,13 @@ export default function Skills() {
         <div id="skills" className={classes.root}>
             <Container maxWidth="md">
                 <Box mb={10}>
-                    <Typography variant="h3" data-aos="fade-right" data-aos-duration="1000">Skills</Typography>
+                    <Typography variant="h3" data-aos="fade-right" data-aos-duration="1000">SKILLS</Typography>
                     <Divider />
                 </Box>
                 <Paper elevation={1} className={classes.paper} >
                     <CardHeader
                         align="center"
-                        title="Web Developer"
+                        title="WEB DEVELOPER"
                     />
                     <Grid container>
                         <Grid item xs={3}>
@@ -79,19 +86,19 @@ export default function Skills() {
                             <Link href="https://www.javascript.com" target="-blank">
                                 <img src={javascript} alt="Javascript" className={classes.logos} />
                             </Link>
-                            <Typography className={classes.title}>JavaScript</Typography>
+                            <Typography className={classes.title}>JAVASCRIPT</Typography>
                         </Grid>
                         <Grid item xs={3}>
                             <Link href="https://reactjs.org" target="-blank">
                                 <img src={react} alt="React.js" className={classes.logos} />
                             </Link>
-                            <Typography className={classes.title}>React.js</Typography>
+                            <Typography className={classes.title}>REACT</Typography>
                         </Grid>
                         <Grid item xs={3}>
                             <Link href="https://getbootstrap.com" target="-blank">
                                 <img src={bootstrap} alt="Bootstrap" className={classes.logos} />
                             </Link>
-                            <Typography className={classes.title}>Boostrap</Typography>
+                            <Typography className={classes.title}>BOOTSTRAP</Typography>
                         </Grid>
                         {/* <Grid item xs={3}>
                             <Link href="https://materializecss.com" target="-blank">
@@ -99,35 +106,35 @@ export default function Skills() {
                             </Link>
                             <Typography className={classes.title}>Materialize</Typography>
                         </Grid> */}
-                        {/* <Grid item xs={3}>
+                        <Grid item xs={3}>
                             <Link href="https://material-ui.com" target="-blank">
                                 <img src={material} alt="Material UI" className={classes.logos} />
                             </Link>
-                            <Typography className={classes.title}>Material UI</Typography>
-                        </Grid> */}
+                            <Typography className={classes.title}>MATERIAL UI</Typography>
+                        </Grid>
                         <Grid item xs={3}>
                             <Link href="https://jquery.com" target="-blank">
                                 <img src={jquery} alt="JQuery" className={classes.logos} />
                             </Link>
-                            <Typography className={classes.title}>JQuery</Typography>
+                            <Typography className={classes.title}>JQUERY</Typography>
                         </Grid>
                         <Grid item xs={3}>
                             <Link href="https://nodejs.org/en/" target="-blank">
                                 <img src={node} alt="Node" className={classes.logos} />
                             </Link>
-                            <Typography className={classes.title}>Node</Typography>
+                            <Typography className={classes.title}>NODE</Typography>
                         </Grid>
                         <Grid item xs={3}>
                             <Link href="https://www.mysql.com/" target="-blank">
                                 <img src={mysql} alt="MySql" className={classes.logos} />
                             </Link>
-                            <Typography className={classes.title}>MySql</Typography>
+                            <Typography className={classes.title}>MYSQL</Typography>
                         </Grid>
                         <Grid item xs={3}>
                             <Link href="https://www.mongodb.com" target="-blank">
                                 <img src={mongo} alt="Mongo DB" className={classes.logos} />
                             </Link>
-                            <Typography className={classes.title}>Mongo DB</Typography>
+                            <Typography className={classes.title}>MONGO DB</Typography>
                         </Grid>
                     </Grid>
                 </Paper>

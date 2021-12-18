@@ -21,8 +21,8 @@ const theme = createMuiTheme({
   
   typography: {
     fontFamily: [
-        'Rock Salt',
-        'cursive',
+        'HansiefRough',
+        
     ].join(','),
   }
 });

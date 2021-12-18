@@ -6,7 +6,7 @@ import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 import Contact from '../Contact/index'
 import Gallery from '../ImageList/Gallery';
 
-const theme = createMuiTheme({
+const phototheme = createMuiTheme({
   spacing: 5,
   breakpoints: {
     values: {
@@ -16,18 +16,11 @@ const theme = createMuiTheme({
   
   typography: {
     fontFamily: [
-      'Sedgwick Ave Display',
-      'cursive',
+        'HansiefRough',
+        
     ].join(','),
-  },
-  
-  footer: {
-    background: "black",
-    "& .MuiDivider-root": {
-        background: "red"
-    }},
+  }
 });
-
 
 function PhotographyPage() {
   // const [selectedImg, setSelectedImg,] = useState(null);
@@ -37,7 +30,7 @@ function PhotographyPage() {
       <Helmet>
         <title>Brett Sevy</title>
       </Helmet>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={phototheme}>
         <PhotoHeader />
         {/* <About/> */}
         {/* <ImageGrid setSelectedImg={setSelectedImg} />
